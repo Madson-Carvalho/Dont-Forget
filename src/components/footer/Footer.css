@@ -1,8 +1,8 @@
 footer {
     display: flex;
     justify-content: center;
-    background-color: #3b4cca;
-    color: #ffde00;
+    background-color: #056608;
+    color: white;
     align-items: center;
     gap: 1.5rem;
 }
