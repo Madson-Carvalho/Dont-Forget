@@ -9,9 +9,9 @@ function Nav() {
     return (
         <nav>
             <Link to="/"><FontAwesomeIcon icon={faHome}/> HOME</Link>
-            <Link to="#"><FontAwesomeIcon icon={faCircleInfo}/> SOBRE</Link>
+            {/* <Link to="#"><FontAwesomeIcon icon={faCircleInfo}/> SOBRE</Link>
             <Link to="/pokemon"><FontAwesomeIcon icon={faGamepad}/> POKÉMON</Link>
-            <Link to="#"><FontAwesomeIcon icon={faAddressBook}/> CONTATO</Link>
+            <Link to="#"><FontAwesomeIcon icon={faAddressBook}/> CONTATO</Link> */}
         </nav>
     )
 }
