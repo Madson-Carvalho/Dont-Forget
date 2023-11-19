@@ -4,7 +4,7 @@ import Nav from "../nav/Nav";
 import img from '../../images/df-logo-circle-removebg-preview.png'
 import { useEffect, useState } from 'react';
 
-function Header() {
+function Header({changecolors}) {
     const [header, setHeader] = useState("header")
 
     const listenScrollEvent = (event) => {
@@ -23,7 +23,7 @@ function Header() {
     }, []);
 
     return (
-        <header className={header}>
+        <header className={changecolors ? header : "header2"}>
             <div className="img">
                 <img src={img} />
             </div>

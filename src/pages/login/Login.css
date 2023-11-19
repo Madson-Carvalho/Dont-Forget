@@ -1,0 +1,53 @@
+.login_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ebf3fe;
+}
+
+.login_conteiner >div >form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.login{
+    height: 100vh;  
+}
+
+.login_conteiner >div{
+    display: flex;
+    flex-direction: column;
+    background-color: #0b3b5b;
+    width: 35%;
+    height: 75%;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login_conteiner >div >form >input{
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+#idlogin{
+    width: 30%;
+    align-self: center;
+}
+
+.login_conteiner >div >svg{
+    font-size: 8rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.login_conteiner >div >a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem;
+}
