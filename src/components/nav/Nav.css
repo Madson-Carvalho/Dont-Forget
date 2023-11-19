@@ -1,7 +1,8 @@
 nav a {
   text-decoration: none;
-  color: #ffde00;
+  color: #ffffff9d;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 nav {
@@ -12,6 +13,5 @@ nav {
 }
 
 nav a:hover {
-  background-color: #cc0000;
-  padding: 0.3rem;
+  color: #ffffff;
 }

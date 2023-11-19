@@ -1,5 +1,5 @@
-header {
-  background-color: #056608;
+.header {
+  /* background-color: #056608; */
   padding: 0.2rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -9,4 +9,13 @@ header {
 .img img {
   width: 90px;
   height: auto;
+}
+
+.header2 {
+  /* background-color: #056608; */
+  background-color: #0b3b5b;
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

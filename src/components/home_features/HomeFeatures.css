@@ -1,0 +1,17 @@
+.home-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #0b3b5b;
+}
+
+.home-features>.fa-2xl {
+    font-size: 3rem;
+}
+
+.home-features>p {
+    text-align: center;
+    padding: 0 1rem;
+}

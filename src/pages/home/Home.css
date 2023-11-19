@@ -1,0 +1,101 @@
+.home {
+    background-image: linear-gradient(to bottom, #0b3b5b, #00678c, #0098b8, #00cbdb, #01fff3);
+    /* background-image: linear-gradient(to bottom, #206660, #158082, #009aa8, #00b4d3, #01ceff); */
+}
+
+.home>header {
+    position: fixed;
+    width: 100%;
+}
+
+.the-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.the-app>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #fff;
+}
+
+.the-app>div>h2 {
+    font-size: 3em;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.the-app>div>p {
+    font-size: 1.2em;
+}
+
+.the-app>img {
+    height: auto;
+    width: auto;
+    max-height: 550px;
+    padding-top: 2rem;
+}
+
+.geolocation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.geolocation>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.geolocation h2, .share-list h2 {
+    font-size: 2rem;
+    color: #0b3b5b;
+}
+
+.geolocation p, .share-list p {
+    font-size: 1em;
+    color: #6b6b6b;
+}
+
+.share-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebf3fe;
+    height: 100vh;
+}
+
+.share-list>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.share-list>img {
+    height: auto;
+    width: auto;
+    max-height: 550px;
+    padding-top: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 100vh;
+}
