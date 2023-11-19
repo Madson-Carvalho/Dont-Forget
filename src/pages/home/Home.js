@@ -16,7 +16,7 @@ import { faImage } from '@fortawesome/free-regular-svg-icons';
 const Home = () => {
     return (
         <div className="home">
-            <Header />
+            <Header changecolors={true}/>
             <section className='the-app'>
                 <div>
                     <h2>Don't Forget <br /> Shopping List</h2>
