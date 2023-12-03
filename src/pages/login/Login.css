@@ -1,53 +1,74 @@
 .login_conteiner {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #ebf3fe;
+    gap: 2rem;
 }
 
-.login_conteiner >div >form {
+.login_conteiner>div>form {
     display: flex;
     flex-direction: column;
     width: 65%;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
-.login{
-    height: 100vh;  
+.login {
+    height: 100vh;
 }
 
-.login_conteiner >div{
+.login_conteiner>div {
     display: flex;
     flex-direction: column;
-    background-color: #0b3b5b;
-    width: 35%;
-    height: 75%;
+    background-color: #0b3b5b; 
+    border: solid 1px #0b3b5b;
+    width: 50%;
+    height: 65%;
     align-items: center;
     border-radius: 20px;
 }
 
-.login_conteiner >div >form >input{
+.login_conteiner>div>form>input {
     padding: 1rem;
     border-radius: 8px;
     font-size: 1.2rem;
 }
 
-#idlogin{
+#idlogin {
     width: 30%;
+    height: 3.5rem;
     align-self: center;
+    cursor: pointer;
+    border: solid 2px #fff;
+    background-color: inherit;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
-.login_conteiner >div >svg{
-    font-size: 8rem;
+#idlogin:hover {
+    background-color: #fff;
+    color: #0b3b5b;
+}
+
+.login_conteiner>div>svg {
+    font-size: 6rem;
     padding: 2rem;
     color: #fff;
 }
 
-.login_conteiner >div >a{
-    color: #fff;
+.login_conteiner>div>a {
+    color: #ffffff9d;
     text-decoration: none;
     padding: 0.3rem;
+}
+
+.login_conteiner>div>a:hover {
+    color: #fff;
+}
+
+#imagemlogin {
+    width: 40rem;
+
 }
