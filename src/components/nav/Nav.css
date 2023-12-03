@@ -15,3 +15,13 @@ nav {
 nav a:hover {
   color: #ffffff;
 }
+
+#register {
+  padding: 0.3rem;
+  border: solid 1px #ffffff9d;
+  border-radius: 5px;
+}
+
+#register:hover {
+  color: #ffffff;
+}

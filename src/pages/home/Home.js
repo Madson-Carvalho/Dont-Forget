@@ -16,7 +16,7 @@ import { faImage } from '@fortawesome/free-regular-svg-icons';
 const Home = () => {
     return (
         <div className="home">
-            <Header changecolors={true}/>
+            <Header changecolors={true} />
             <section className='the-app'>
                 <div>
                     <h2>Don't Forget <br /> Shopping List</h2>
@@ -40,18 +40,21 @@ const Home = () => {
                 <img src={shareListImg} />
             </section>
             <section className='features'>
-                <HomeFeatures icon={faDesktop} title={'Versão Web'}
-                description={'Crie e atualize sua lista no site'} />
-                <HomeFeatures icon={faMobileScreenButton} title={'Versão Mobile'}
-                description={'Crie e atualize a lista na palma da sua mão'} />
-                <HomeFeatures icon={faImage} title={'Fotos'}
-                description={'Adicione fotos customizadas aos itens'} />
-                <HomeFeatures icon={faMapLocationDot} title={'Notificação por Geolocalização'}
-                description={'Receba lembrete de compras a fazer ao se aproximar de uma loja'} />
-                <HomeFeatures icon={faListCheck} title={'Listas Ilimitadas'}
-                description={'Crie listas de compras para diferentes situações'} />
-                <HomeFeatures icon={faScaleBalanced} title={'Quantidade e Unidades'}
-                description={'Adicione peso, quantidade ou volumes aos itens'} />
+                <h2>Funcionalidades</h2>
+                <div>
+                    <HomeFeatures icon={faDesktop} title={'Versão Web'}
+                        description={'Crie e atualize sua lista no site'} />
+                    <HomeFeatures icon={faMobileScreenButton} title={'Versão Mobile'}
+                        description={'Crie e atualize a lista na palma da sua mão'} />
+                    <HomeFeatures icon={faImage} title={'Fotos'}
+                        description={'Adicione fotos customizadas aos itens'} />
+                    <HomeFeatures icon={faMapLocationDot} title={'Notificação por Geolocalização'}
+                        description={'Receba lembrete de compras a fazer ao se aproximar de uma loja'} />
+                    <HomeFeatures icon={faListCheck} title={'Listas Ilimitadas'}
+                        description={'Crie listas de compras para diferentes situações'} />
+                    <HomeFeatures icon={faScaleBalanced} title={'Quantidade e Unidades'}
+                        description={'Adicione peso, quantidade ou volumes aos itens'} />
+                </div>
             </section>
             <Footer />
         </div>

@@ -1,17 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./Login.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons"
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
-import loginimg from '../../images/Login-rafiki.png';
+import loginImg from '../../images/Login-rafiki.png';
 
 function Login() {
     return (
         <div className="login">
-            {/* <Header changecolors={false} /> */}
             <div className="login_conteiner">
-                <img id="imagemlogin" src={loginimg} />
+                <img id="imagemlogin" src={loginImg} />
                 <div>
                     <FontAwesomeIcon icon={faCircleUser} />
                     <form>
@@ -23,7 +20,6 @@ function Login() {
                     <Link to="#">Esqueceu a senha?</Link>
                 </div>
             </div>
-            {/* <Footer /> */}
         </div>
     )
 }
