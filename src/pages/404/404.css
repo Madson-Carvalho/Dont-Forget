@@ -1,0 +1,20 @@
+ body{
+    background-color: #ebf3fe;
+ }
+ 
+ .error404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error404 div {
+    text-align: center;
+}
+
+#error404 img {
+    max-width: 100%;
+    height: auto;
+}
+
