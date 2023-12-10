@@ -14,7 +14,7 @@ const UserRegister = () => {
                     <input type={'text'} name={'name'} placeholder={'Nome'} style={{ width: '80%' }} autoFocus={true} />
                     <fieldset>
                         <input type={'email'} name={'email'} placeholder={'E-mail'} />
-                        <input type={'tel'} name={'phone'} pattern={'\([0-9]{2}\) [0-9]{5}-[0-9]{4}$'} placeholder={'Telefone'} />
+                        <input type={'tel'} name={'phone'} pattern={'([0-9]{2}) [0-9]{5}-[0-9]{4}$'} placeholder={'Telefone'} />
                     </fieldset>
                     <fieldset>
                         <input type={'text'} name={'street'} placeholder={'Rua'} />
