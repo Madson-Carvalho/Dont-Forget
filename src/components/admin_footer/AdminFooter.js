@@ -2,10 +2,10 @@ const AdminFooter = () => {
     return (
         <footer className="main-footer">
             {/* To the right */}
-            <div className="float-right d-none d-sm-inline">Anything you want</div>
+            <div className="float-right d-none d-sm-inline">Privacy Policy | Terms of service |</div>
             {/* Default to the left */}
             <strong>
-                Copyright © 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.
+                Copyright © INNOV3 MINDS. All rights reserved.
             </strong>{" "}
             All rights reserved.
         </footer>

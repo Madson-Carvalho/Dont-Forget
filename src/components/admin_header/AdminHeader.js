@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AdminHeader = () => {
     return (
         <>
@@ -6,43 +8,43 @@ const AdminHeader = () => {
                 {/* Left navbar links */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" data-widget="pushmenu" href="#" role="button">
+                        <Link className="nav-link" data-widget="pushmenu" to={'#'} role="button">
                             <i className="fas fa-bars" />
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item d-none d-sm-inline-block">
-                        <a href="index3.html" className="nav-link">
+                        <Link to={'/admin-home'} className="nav-link">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item d-none d-sm-inline-block">
-                        <a href="#" className="nav-link">
-                            Contact
-                        </a>
+                        <Link to={'#'} className="nav-link">
+                            Contato
+                        </Link>
                     </li>
                     <li className="nav-item dropdown">
-                        <a
+                        <Link
                             className="nav-link dropdown-toggle"
-                            href="#"
+                            to={'#'}
                             id="navbarDropdown2"
                             role="button"
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                         >
-                            Help
-                        </a>
+                            Ajuda
+                        </Link>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a className="dropdown-item" href="#">
+                            <Link className="dropdown-item" to={'#'}>
                                 FAQ
-                            </a>
-                            <a className="dropdown-item" href="#">
-                                Support
-                            </a>
+                            </Link>
+                            <Link className="dropdown-item" to={'#'}>
+                                Suport
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a className="dropdown-item" href="#">
-                                Contact
-                            </a>
+                            <Link className="dropdown-item" to={'#'}>
+                                Contato
+                            </Link>
                         </div>
                     </li>
                 </ul>
@@ -52,7 +54,7 @@ const AdminHeader = () => {
                         <input
                             className="form-control form-control-navbar"
                             type="search"
-                            placeholder="Search"
+                            placeholder="Pesquisar"
                             aria-label="Search"
                         />
                         <div className="input-group-append">
@@ -66,12 +68,12 @@ const AdminHeader = () => {
                 <ul className="navbar-nav ml-auto">
                     {/* Messages Dropdown Menu */}
                     <li className="nav-item dropdown">
-                        <a className="nav-link" data-toggle="dropdown" href="#">
+                        <Link className="nav-link" data-toggle="dropdown" to={'#'}>
                             <i className="far fa-comments" />
                             <span className="badge badge-danger navbar-badge">3</span>
-                        </a>
+                        </Link>
                         <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <a href="#" className="dropdown-item">
+                            <Link to={'#'} className="dropdown-item">
                                 {/* Message Start */}
                                 <div className="media">
                                     <img
@@ -86,16 +88,16 @@ const AdminHeader = () => {
                                                 <i className="fas fa-star" />
                                             </span>
                                         </h3>
-                                        <p className="text-sm">Call me whenever you can...</p>
+                                        <p className="text-sm">Enviou uma nova lista...</p>
                                         <p className="text-sm text-muted">
-                                            <i className="far fa-clock mr-1" /> 4 Hours Ago
+                                            <i className="far fa-clock mr-1" /> 4 Horas atrás
                                         </p>
                                     </div>
                                 </div>
                                 {/* Message End */}
-                            </a>
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item">
+                            <Link to={'#'} className="dropdown-item">
                                 {/* Message Start */}
                                 <div className="media">
                                     <img
@@ -110,16 +112,16 @@ const AdminHeader = () => {
                                                 <i className="fas fa-star" />
                                             </span>
                                         </h3>
-                                        <p className="text-sm">I got your message bro</p>
+                                        <p className="text-sm">Enviou uma nova lista...</p>
                                         <p className="text-sm text-muted">
-                                            <i className="far fa-clock mr-1" /> 4 Hours Ago
+                                            <i className="far fa-clock mr-1" /> 4 Horas Atrás
                                         </p>
                                     </div>
                                 </div>
                                 {/* Message End */}
-                            </a>
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item">
+                            <Link to={'#'} className="dropdown-item">
                                 {/* Message Start */}
                                 <div className="media">
                                     <img
@@ -134,65 +136,64 @@ const AdminHeader = () => {
                                                 <i className="fas fa-star" />
                                             </span>
                                         </h3>
-                                        <p className="text-sm">The subject goes here</p>
+                                        <p className="text-sm">Enviou uma nova lista...</p>
                                         <p className="text-sm text-muted">
-                                            <i className="far fa-clock mr-1" /> 4 Hours Ago
+                                            <i className="far fa-clock mr-1" /> 4 Horas Atrás
                                         </p>
                                     </div>
                                 </div>
                                 {/* Message End */}
-                            </a>
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item dropdown-footer">
-                                See All Messages
-                            </a>
+                            <Link to={'#'} className="dropdown-item dropdown-footer">
+                                Ver todas as mensagens
+                            </Link>
                         </div>
                     </li>
                     {/* Notifications Dropdown Menu */}
                     <li className="nav-item dropdown">
-                        <a className="nav-link" data-toggle="dropdown" href="#">
+                        <Link className="nav-link" data-toggle="dropdown" to={'#'}>
                             <i className="far fa-bell" />
                             <span className="badge badge-warning navbar-badge">15</span>
-                        </a>
+                        </Link>
                         <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <span className="dropdown-header">15 Notifications</span>
+                            <span className="dropdown-header">15 Notificações</span>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item">
-                                <i className="fas fa-envelope mr-2" /> 4 new messages
+                            <Link to={'#'}className="dropdown-item">
+                                <i className="fas fa-envelope mr-2" /> 4 novas mensagens
                                 <span className="float-right text-muted text-sm">3 mins</span>
-                            </a>
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item">
-                                <i className="fas fa-users mr-2" /> 8 friend requests
-                                <span className="float-right text-muted text-sm">12 hours</span>
-                            </a>
+                            <Link to={'#'} className="dropdown-item">
+                                <i className="fas fa-users mr-2" /> 8 solicitações de amizade
+                                {/* <span className="float-right text-muted text-sm">12 horas</span> */}
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item">
-                                <i className="fas fa-file mr-2" /> 3 new reports
-                                <span className="float-right text-muted text-sm">2 days</span>
-                            </a>
+                            <Link to={'#'} className="dropdown-item">
+                                <i className="fas fa-file mr-2" /> 3 novas listas recebidas
+                                <span className="float-right text-muted text-sm">4 Horas</span>
+                            </Link>
                             <div className="dropdown-divider" />
-                            <a href="#" className="dropdown-item dropdown-footer">
-                                See All Notifications
-                            </a>
+                            <Link to={'#'} className="dropdown-item dropdown-footer">
+                                Ver todas as notificações
+                            </Link>
                         </div>
                     </li>
                     <li className="nav-item">
-                        <a
+                        <Link
                             className="nav-link"
                             data-widget="control-sidebar"
                             data-slide="true"
-                            href="#"
+                            to={'#'}
                             role="button"
                         >
                             <i className="fas fa-th-large" />
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
             {/* /.navbar */}
         </>
-
     )
 }
 
