@@ -1,3 +1,5 @@
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const AdminHeader = () => {
@@ -42,7 +44,7 @@ const AdminHeader = () => {
                                 Suport
                             </Link>
                             <div className="dropdown-divider" />
-                            <Link className="dropdown-item" to={'contact'}>
+                            <Link className="dropdown-item" to={'/contact'}>
                                 Contato
                             </Link>
                         </div>
@@ -187,7 +189,7 @@ const AdminHeader = () => {
                             to={'#'}
                             role="button"
                         >
-                            <i className="fas fa-th-large" />
+                            <FontAwesomeIcon icon={faArrowRightFromBracket} />
                         </Link>
                     </li>
                 </ul>

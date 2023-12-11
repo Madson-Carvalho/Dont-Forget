@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    height: 70%;
+    /* height: 70%; */
     background-color: #0b3b5b;
     padding: 2rem 1rem;
     gap: 1rem;
@@ -43,7 +43,7 @@
     width: 8.5rem !important;
 }
 
-.user-register-body form input[type=submit] {
+.user-register-body form a {
     cursor: pointer;
     border: solid 2px #fff;
     background-color: inherit;

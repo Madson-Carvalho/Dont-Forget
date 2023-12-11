@@ -1,56 +1,34 @@
-import { Link } from "react-router-dom";
 import "./MyLists.css"
 
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faPenToSquare, faPlus, faShareNodes, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import BaseLayoutPage from "../../components/base_layout_page/BaseLayoutPage";
+import ShoppingList from "../../components/shopping_list/ShoppingList";
 
 const MyLists = () => {
-    const [itens, setItens] = useState([
+
+    const itens = [
         { id: 1, nome: 'Pão' },
         { id: 2, nome: 'Leite' },
         { id: 3, nome: 'Ovos' },
         { id: 4, nome: 'Frutas' },
         { id: 5, nome: 'Óleo' },
         { id: 6, nome: 'Verduras' },
-    ]);
+    ];
 
-    const handleCheckboxChange = (itemId) => {
-        setItens((prevItens) =>
-            prevItens.map((item) =>
-                item.id === itemId ? { ...item, selecionado: !item.selecionado } : item
-            )
-        );
-    };
+    const itensPharma = [
+        { id: 1, nome: 'Protetor solar' },
+        { id: 2, nome: 'Pós sol' },
+        { id: 3, nome: 'Creme de pele' },
+    ];
 
     return (
-        <div className="listBody">
-            <h1>Suas listas de compras</h1>
-            <div>
-                <ul className="ulstily">
-                    <div className="listoption">
-                    <h2>Minha lista</h2>
-                    <Link to="#"><FontAwesomeIcon icon={faHeart}/></Link>
-                    <Link to="#"><FontAwesomeIcon icon={faShareNodes}/></Link>
-                    <Link to="#"><FontAwesomeIcon icon={faTrashCan}/></Link>
-                    <Link to="#"><FontAwesomeIcon icon={faPenToSquare}/></Link>
-                    <Link to="#"><FontAwesomeIcon icon={faPlus}/></Link>
-                    </div>
-                    {itens.map((item) => (
-                        <li key={item.id}>
-                            <input
-                                type="checkbox"
-                                id={`item-${item.id}`}
-                                checked={item.selecionado || false}
-                                onChange={() => handleCheckboxChange(item.id)}
-                            />
-                            <label htmlFor={`item-${item.id}`}>{item.nome}</label>
-                        </li>
-                    ))}
-                </ul>
+        <BaseLayoutPage title={'Minhas listas'} >
+            <div className="all-lists">
+                <ShoppingList title={'Compras Mercado'} data={itens} cratedDate={'23/05/2023'} canSee={false} />
+                <ShoppingList title={'Compras Farmácia'} data={itensPharma} cratedDate={'11/12/2023'} canSee={false} />
+                <ShoppingList title={'Compras Farmácia'} data={itensPharma} cratedDate={'11/12/2023'} canSee={false} />
             </div>
-        </div>
+        </BaseLayoutPage>
     );
 };
 

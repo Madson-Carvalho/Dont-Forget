@@ -1,27 +1,18 @@
-.contactUs>form {
+.contactUs {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #0b3b5b;
-    width: 40rem;
-    height: 40rem;
-    border-radius: 20px;
-    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-radius: 8px;
 }
 
-.contactUs>form>input {
+.contactUs>input, .contactUs>textarea {
     padding: 1rem;
     border-radius: 8px;
     font-size: 1.2rem;
-    width: 20rem;
-    border: none;
+    border: solid 0.5px #d6d6d6;    
     outline: none;
-    gap: 2rem;
-}
-
-.contactUs>form>h1 {
-    color: #fff;
-    padding: 2rem;
 }
 
 #idenviar {
@@ -29,26 +20,13 @@
     height: 3.5rem;
     align-self: center;
     cursor: pointer;
-    border: solid 2px #fff;
+    border: solid 2px #0b3b5b;
     background-color: inherit;
-    color: #fff;
+    color: #0b3b5b;
     transition: all 0.3s ease;
 }
 
 #idenviar:hover {
-    background-color: #fff;
-    color: #0b3b5b;
+    background-color: #0b3b5b;
+    color: #fff;
 }
-
-#idmessage {
-    width: 20rem;
-    height: 6rem;
-}
-
-.contactUs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem;
-}
-

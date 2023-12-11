@@ -6,6 +6,7 @@ import AdminHome from "../pages/admin_home/AdminHome";
 import CreateList from "../pages/create_list/CreateList";
 import Contact from "../pages/contact/Contact";
 import MyLists from "../pages/my_lists/MyLists";
+import CreateListItem from "../pages/create_list_item/CreateListItem";
 
 const CustomRoutes = () => {
     return (
@@ -17,6 +18,7 @@ const CustomRoutes = () => {
             <Route path="/create-list" element={<CreateList/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/my-lists" element={<MyLists/>} />
+            <Route path="/create-list-intens" element={<CreateListItem/>} />
         </Routes>
     )
 }

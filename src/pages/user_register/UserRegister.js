@@ -2,6 +2,7 @@ import './UserRegister.css'
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import img from '../../images/wish list.png';
+import { Link } from 'react-router-dom';
 
 const UserRegister = () => {
     return (
@@ -25,7 +26,8 @@ const UserRegister = () => {
                         <input type={'text'} name={'neighborhood'} placeholder={'Bairro'} />
                         <input type={'text'} name={'city'} placeholder={'Cidade'} />
                     </fieldset>
-                    <input type={'submit'} value={'Cadastrar'} />
+                    <input type='password' name='password' placeholder='Senha' style={{ width: '80%' }} />
+                    <Link to="/admin-home" id="idlogin" >Cadastrar</Link>
                 </form>
             </div>
             <Footer />

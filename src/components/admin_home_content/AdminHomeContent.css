@@ -1,0 +1,6 @@
+.home-info {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+}

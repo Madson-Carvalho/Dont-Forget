@@ -14,7 +14,7 @@ function Login() {
                     <form>
                         <input type="email" name="email" placeholder="E-mail" />
                         <input type="password" name="password" placeholder="Senha" />
-                        <input id="idlogin" type="submit" value="Entrar" />
+                        <Link to="/admin-home" id="idlogin" >Entrar</Link>
                     </form>
                     <Link to="/register">Registre-se</Link>
                     <Link to="#">Esqueceu a senha?</Link>
