@@ -18,7 +18,7 @@ const AdminHeader = () => {
                         </Link>
                     </li>
                     <li className="nav-item d-none d-sm-inline-block">
-                        <Link to={'#'} className="nav-link">
+                        <Link to={'/contact'} className="nav-link">
                             Contato
                         </Link>
                     </li>
@@ -42,7 +42,7 @@ const AdminHeader = () => {
                                 Suport
                             </Link>
                             <div className="dropdown-divider" />
-                            <Link className="dropdown-item" to={'#'}>
+                            <Link className="dropdown-item" to={'contact'}>
                                 Contato
                             </Link>
                         </div>
