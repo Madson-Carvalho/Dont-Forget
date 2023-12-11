@@ -7,7 +7,7 @@ const AdminSidebarMenu = () => {
     return (
         <>
             {/* Main Sidebar Container */}
-            <aside className="main-sidebar sidebar-dark-primary elevation-4">
+            <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{backgroundColor: '#0b3c5c'}}>
                 {/* Brand Logo */}
                 <Link to={'/admin-home'} className="brand-link">
                     <img
@@ -45,9 +45,10 @@ const AdminSidebarMenu = () => {
                             {/* Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library */}
                             <li className="nav-item menu-open">
-                                <Link to={'/admin-home'} className="nav-link active">
+                                <Link to={'/admin-home'} className="nav-link active" style={{backgroundColor: '#fff', color: '#0b3c5c'}}>
                                     <i className="nav-icon fas fa-tachometer-alt" />
-                                    <p>Dashboard &nbsp;&nbsp;&nbsp; <i className="right fas fa-angle-left" /></p>
+                                    <p>Dashboard</p>
+                                    {/* <i className="right fas fa-angle-left" /> */}
                                 </Link>
                                 {/* <ul className="nav nav-treeview">
                                     <li className="nav-item">
