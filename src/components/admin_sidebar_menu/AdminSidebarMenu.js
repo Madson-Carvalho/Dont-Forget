@@ -1,33 +1,38 @@
+import { Link } from 'react-router-dom';
+
+import logo from '../../images/df-logo-circle-removebg-preview.png';
+import defaultUser from '../../images/default-user-2.avif';
+
 const AdminSidebarMenu = () => {
     return (
         <>
             {/* Main Sidebar Container */}
             <aside className="main-sidebar sidebar-dark-primary elevation-4">
                 {/* Brand Logo */}
-                <a href="index3.html" className="brand-link">
+                <Link to={'/admin-home'} className="brand-link">
                     <img
-                        src="dist/img/AdminLTELogo.png"
-                        alt="AdminLTE Logo"
+                        src={logo}
+                        alt="Don't Forget Logo"
                         className="brand-image img-circle elevation-3"
                         style={{ opacity: ".8" }}
                     />
-                    <span className="brand-text font-weight-light">AdminLTE 3</span>
-                </a>
+                    <span className="brand-text font-weight-light">Don't Forget</span>
+                </Link>
                 {/* Sidebar */}
                 <div className="sidebar">
                     {/* Sidebar user panel (optional) */}
                     <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div className="image">
                             <img
-                                src="dist/img/user2-160x160.jpg"
+                                src={defaultUser}
                                 className="img-circle elevation-2"
                                 alt="User Image"
                             />
                         </div>
                         <div className="info">
-                            <a href="#" className="d-block">
-                                Alexander Pierce
-                            </a>
+                            <Link to={'#'} className="d-block">
+                                Madson Carvalho
+                            </Link>
                         </div>
                     </div>
                     {/* Sidebar Menu */}
@@ -40,14 +45,11 @@ const AdminSidebarMenu = () => {
                             {/* Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library */}
                             <li className="nav-item menu-open">
-                                <a href="#" className="nav-link active">
+                                <Link to={'/admin-home'} className="nav-link active">
                                     <i className="nav-icon fas fa-tachometer-alt" />
-                                    <p>
-                                        Starter Pages
-                                        <i className="right fas fa-angle-left" />
-                                    </p>
-                                </a>
-                                <ul className="nav nav-treeview">
+                                    <p>Dashboard &nbsp;&nbsp;&nbsp; <i className="right fas fa-angle-left" /></p>
+                                </Link>
+                                {/* <ul className="nav nav-treeview">
                                     <li className="nav-item">
                                         <a href="#" className="nav-link active">
                                             <i className="far fa-circle nav-icon" />
@@ -60,17 +62,17 @@ const AdminSidebarMenu = () => {
                                             <p>Inactive Page</p>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> */}
                             </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">
+                            {/* <li className="nav-item">
+                                <Link to={'#'} className="nav-link">
                                     <i className="nav-icon fas fa-th" />
                                     <p>
                                         Simple Link
                                         <span className="right badge badge-danger">New</span>
                                     </p>
-                                </a>
-                            </li>
+                                </Link>
+                            </li> */}
                         </ul>
                     </nav>
                     {/* /.sidebar-menu */}
