@@ -1,0 +1,59 @@
+.ListRegister {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.ListRegister>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #0b3b5b;
+    border: solid 1px #0b3b5b;
+    width: 50%;
+    /* height: 65%; */
+    align-items: center;
+    border-radius: 20px;
+}
+
+.ListRegister>div>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    background-color: #0b3b5b;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.ListRegister>div>form>input {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 30rem;
+    /* height: 10rem; */
+    border: none;
+    outline: none;
+}
+
+#idbutton {
+    width: 30%;
+    height: 3.5rem;
+    align-self: center;
+    cursor: pointer;
+    border: solid 2px #fff;
+    background-color: inherit;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#idbutton:hover {
+    background-color: #fff;
+    color: #0b3b5b;
+}
+
+.ListRegister>div>form>h1 {
+    color: #fff;
+}
