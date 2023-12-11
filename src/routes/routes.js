@@ -4,6 +4,7 @@ import Login from "../pages/login/Login";
 import UserRegister from "../pages/user_register/UserRegister";
 import AdminHome from "../pages/admin_home/AdminHome";
 import CreateList from "../pages/create_list/CreateList";
+import Contact from "../pages/contact/Contact";
 
 const CustomRoutes = () => {
     return (
@@ -13,6 +14,7 @@ const CustomRoutes = () => {
             <Route path="/register" element={<UserRegister />} />
             <Route path="/admin-home" element={<AdminHome />} />
             <Route path="/create-list" element={<CreateList/>} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     )
 }
