@@ -86,6 +86,27 @@ const AdminSidebarMenu = () => {
                                     </li>
                                 </ul> */}
                             </li>
+                            <li className="nav-item menu-open">
+                                <Link to={'/my-lists'} className="nav-link active" style={{backgroundColor: '#fff', color: '#0b3c5c'}}>
+                                <i class="nav-icon fas fa-solid fa-heart"></i>
+                                    <p>Minhas listas</p>
+                                    {/* <i className="right fas fa-angle-left" /> */}
+                                </Link>
+                                {/* <ul className="nav nav-treeview">
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link active">
+                                            <i className="far fa-circle nav-icon" />
+                                            <p>Active Page</p>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link">
+                                            <i className="far fa-circle nav-icon" />
+                                            <p>Inactive Page</p>
+                                        </a>
+                                    </li>
+                                </ul> */}
+                            </li>
                         </ul>
                     </nav>
                     {/* /.sidebar-menu */}
