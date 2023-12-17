@@ -1,0 +1,16 @@
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    padding: 0.2rem 1rem;
+    background-color: #fff;
+    color: #0b3b5b;
+    border-bottom: 1px solid #dee2e6;
+    transition: margin-left .3s ease-in-out;
+    font-size: 1.3rem;
+}
+
+.header-hamburguer {
+    cursor: pointer;
+}

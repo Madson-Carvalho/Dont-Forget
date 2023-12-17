@@ -12,8 +12,6 @@ function Nav() {
             <Link to="/"><FontAwesomeIcon icon={faHome}/> HOME</Link>
             <Link to="/login"><FontAwesomeIcon icon={faCircleUser}/> LOGIN</Link>
             <Link id="register" to="/register"><FontAwesomeIcon icon={faIdCard}/> REGISTRE-SE</Link>
-            {/* <Link to="#"><FontAwesomeIcon icon={faCircleInfo}/> SOBRE</Link>
-            <Link to="#"><FontAwesomeIcon icon={faAddressBook}/> CONTATO</Link> */}
         </nav>
     )
 }

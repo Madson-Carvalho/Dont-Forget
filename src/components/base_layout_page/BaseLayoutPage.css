@@ -1,0 +1,31 @@
+.default-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+}
+
+.sidebar-open .grid-container {
+    margin-left: 200px; /* Largura da sidebar */
+}
+
+.content-wrapper {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.content-header {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.content {
+    padding: 20px;
+}

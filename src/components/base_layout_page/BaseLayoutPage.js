@@ -1,45 +1,51 @@
+import './BaseLayoutPage.css';
+
+import { useState } from 'react';
 import AdminFooter from '../admin_footer/AdminFooter';
 import AdminSidebarMenu from '../admin_sidebar_menu/AdminSidebarMenu';
 import AdminHeader from './../admin_header/AdminHeader';
 
-const BaseLayoutPage = ({children, title}) => {
+const BaseLayoutPage = ({ children, title }) => {
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
+
     return (
-        <div className="wrapper">
-            <AdminHeader />
-            <AdminSidebarMenu />
+        <div className="app">
+        <AdminHeader toggleSidebar={toggleSidebar} />
+        <div className={`grid-container ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+            <AdminSidebarMenu isOpen={isSidebarOpen} />
+            {/* Content Wrapper */}
             <div className="content-wrapper">
                 {/* Content Header (Page header) */}
                 <div className="content-header">
                     <div className="container-fluid">
-                        <div className="row mb-2">
-                            <div className="col-sm-6">
-                                <h1 className="m-0">{title}</h1>
+                        <div>
+                            <div>
+                                <h1>{title}</h1>
                             </div>
                             {/* /.col */}
-                            <div className="col-sm-6">
-                                <ol className="breadcrumb float-sm-right">
-                                    <li className="breadcrumb-item">
+                            <div>
+                                <ol>
+                                    <li>
                                         <a href="#">{title}</a>
                                     </li>
-                                    <li className="breadcrumb-item active">Admin Home</li>
+                                    <li>Admin Home</li>
                                 </ol>
                             </div>
-                            {/* /.col */}
                         </div>
-                        {/* /.row */}
                     </div>
-                    {/* /.container-fluid */}
                 </div>
-                {/* /.content-header */}
-                {/* Main content */}
+                {/* Content */}
                 <div className="content">
                     {children}
-                    {/* /.container-fluid */}
                 </div>
-                {/* /.content */}
             </div>
-            <AdminFooter />
         </div>
+        <AdminFooter />
+    </div>
     )
 }
 

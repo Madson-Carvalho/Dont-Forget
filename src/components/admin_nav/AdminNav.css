@@ -1,0 +1,9 @@
+.admin-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin-nav>svg {
+    cursor: pointer;
+}
