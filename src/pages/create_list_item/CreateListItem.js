@@ -6,7 +6,7 @@ import { faEdit, faShareNodes, faTrashAlt, faTrashCan } from '@fortawesome/free-
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const CreateListItem = () => {
+const CreateListItem = ({isSidebarOpen, toggleSidebar}) => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('listName');
 
@@ -36,7 +36,7 @@ const CreateListItem = () => {
     };
 
     return (
-        <BaseLayoutPage title={`Adicionar itens: ${myParam}`}>
+        <BaseLayoutPage title={`Adicionar itens: ${myParam}`} isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}>
             <div className='new-list-item-content'>
                 <div className='new-list-item-header'>
                     <h2>{myParam}</h2>

@@ -1,17 +1,18 @@
-import BaseLayoutPage from '../../components/base_layout_page/BaseLayoutPage';
-import Footer from '../../components/footer/Footer';
-import Header from '../../components/header/Header';
-import './Contact.css'
+import './Contact.css';
 
-const Contact = () => {
+import BaseLayoutPage from '../../components/base_layout_page/BaseLayoutPage';
+import CustomInput from './../../components/custom_input/CustomInput';
+import CustomTextArea from '../../components/custom_text_area/CustomTextArea';
+import CustomInputSubmit from './../../components/custom_input_submit/CustomInputSubmit';
+
+const Contact = ({isSidebarOpen, toggleSidebar}) => {
     return (
-        <BaseLayoutPage title={'Fale Conosco'} >
+        <BaseLayoutPage title={'Fale Conosco'} isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} >
             <form className='contactUs'>
-                <input type="name" name="name" placeholder="Nome" />
-                <input type="surname" name="surname" placeholder="Sobrenome" />
-                <input type="email" name="email" placeholder="E-mail" />
-                <textarea name="message" placeholder="Mensagem" rows="5" cols="50" ></textarea>
-                <input id="idenviar" type="submit" value="Enviar" />
+                <CustomInput type={'text'} name={'name'} id={'name'} label={'Nome'} />
+                <CustomInput type={'email'} name={'email'} id={'email'} label={'E-mail'} />
+                <CustomTextArea name={'message'} id={'message'} columns={50} rows={5} label={'Mensagem'} />
+                <CustomInputSubmit value={'Enviar'} />
             </form>
         </BaseLayoutPage>
     );

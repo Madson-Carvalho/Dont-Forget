@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contentContainer {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.content-header {
+    color: #0b3b5b;
+}

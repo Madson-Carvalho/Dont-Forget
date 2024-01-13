@@ -1,0 +1,17 @@
+.openSidebar {
+    width: 15.5rem;
+    min-height: 100vh;
+    background-color: #0b3c5c;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+}
+
+.closeSidebar {
+    width: 3.5rem;
+    min-height: 100vh;
+    background-color: #0b3c5c;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+}
