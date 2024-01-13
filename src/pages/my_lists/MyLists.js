@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import BaseLayoutPage from "../../components/base_layout_page/BaseLayoutPage";
 import ShoppingList from "../../components/shopping_list/ShoppingList";
 
-const MyLists = () => {
+const MyLists = ({isSidebarOpen, toggleSidebar}) => {
 
     const itens = [
         { id: 1, nome: 'Pão' },
@@ -22,7 +22,7 @@ const MyLists = () => {
     ];
 
     return (
-        <BaseLayoutPage title={'Minhas listas'} >
+        <BaseLayoutPage title={'Minhas listas'} isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} >
             <div className="all-lists">
                 <ShoppingList title={'Compras Mercado'} data={itens} cratedDate={'23/05/2023'} canSee={false} />
                 <ShoppingList title={'Compras Farmácia'} data={itensPharma} cratedDate={'11/12/2023'} canSee={false} />

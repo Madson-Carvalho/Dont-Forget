@@ -1,14 +1,17 @@
-.sidebar {
-    position: absolute;
+.openSidebar {
     width: 15.5rem;
-    height: 100%;
+    min-height: 100vh;
     background-color: #0b3c5c;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    transform: translateX(0%);
     padding: 1rem 0;
 }
 
-/* .sidebar:hover {
-    width: 18rem;
-} */
+.closeSidebar {
+    width: 3.5rem;
+    min-height: 100vh;
+    background-color: #0b3c5c;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+}

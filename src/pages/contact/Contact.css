@@ -6,27 +6,3 @@
     gap: 1rem;
     border-radius: 8px;
 }
-
-.contactUs>input, .contactUs>textarea {
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    border: solid 0.5px #d6d6d6;    
-    outline: none;
-}
-
-#idenviar {
-    width: 30%;
-    height: 3.5rem;
-    align-self: center;
-    cursor: pointer;
-    border: solid 2px #0b3b5b;
-    background-color: inherit;
-    color: #0b3b5b;
-    transition: all 0.3s ease;
-}
-
-#idenviar:hover {
-    background-color: #0b3b5b;
-    color: #fff;
-}

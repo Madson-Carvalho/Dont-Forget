@@ -1,4 +1,4 @@
-.sidebar-item {
+.sidebar-item, .sidebar-item-close {
     list-style: none;
     transition: 0.5s;
     width: 90%;
@@ -13,7 +13,7 @@
     height: 3rem;
 }
 
-.sidebar-item>a>.icon {
+.sidebar-item>a>.icon, .sidebar-item-close>a>.icon {
     position: relative;
     display: flex;
     justify-content: center;
@@ -53,5 +53,38 @@
 
 .sidebar-item.active-link span.icon,
 .sidebar-item.active-link span.text {
+    color: #0b3c5c;
+}
+
+.sidebar-item-close>a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    text-decoration: none;
+    height: 3rem;
+}
+
+.sidebar-item-close>a>.text {
+    display: none;
+}
+
+.sidebar-item-close:hover {
+    background-color: #F4F6F9;
+    color: #0b3c5c;
+}
+
+.sidebar-item-close:hover span.icon,
+.sidebar-item-close:hover span.text {
+    color: #0b3c5c;
+}
+
+.sidebar-item-close.active-link {
+    background-color: #fff;
+    color: #0b3c5c;
+}
+
+.sidebar-item-close.active-link span.icon,
+.sidebar-item-close.active-link span.text {
     color: #0b3c5c;
 }

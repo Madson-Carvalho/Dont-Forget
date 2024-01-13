@@ -1,16 +1,11 @@
-import AdminFooter from "../../components/admin_footer/AdminFooter";
-import AdminHeader from "../../components/admin_header/AdminHeader"
 import AdminHomeContent from "../../components/admin_home_content/AdminHomeContent";
-import AdminSidebarMenu from "../../components/admin_sidebar_menu/AdminSidebarMenu";
+import BaseLayoutPage from "../../components/base_layout_page/BaseLayoutPage";
 
-const AdminHome = () => {
+const AdminHome = ({isSidebarOpen, toggleSidebar}) => {
     return (
-        <div className="wrapper">
-            <AdminHeader />
-            <AdminSidebarMenu />
+        <BaseLayoutPage title={'Dashboard'} isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} >
             < AdminHomeContent />
-            <AdminFooter />
-        </div>
+        </BaseLayoutPage>
     )
 }
 

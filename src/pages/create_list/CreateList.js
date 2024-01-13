@@ -1,18 +1,19 @@
 import "./CreateList.css";
 
 import BaseLayoutPage from "../../components/base_layout_page/BaseLayoutPage";
+import CustomInput from "../../components/custom_input/CustomInput";
+import CustomInputSubmit from "../../components/custom_input_submit/CustomInputSubmit";
 
-const CreateList = () => {
+const CreateList = ({ isSidebarOpen, toggleSidebar }) => {
     return (
-        <BaseLayoutPage title={'Adicionar Lista'} >
-            <form className="ListRegister defaultInputs">
-                <input type="title" name="title" placeholder="Nome da lista" />
-                <input type="description" name="description" placeholder="Adicione uma descrição" />
-                <input type="date" name="date" placeholder="Data" />
-                <input type="time" name="time" placeholder="Hora do Vencimento" />
-                <input type="type" name="type" placeholder="Tipo do item" />
-                <input type="" name="text" placeholder="Opções de recorrência" />
-                <input className="defaultButton" type="submit" value="Criar" />
+        <BaseLayoutPage title={'Adicionar Lista'} isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} >
+            <form className="ListRegister">
+                <CustomInput name={'title'} type={'text'} id={'title'} label={'Nome da lista'} />
+                <CustomInput name={'description'} type={'text'} id={'description'} label={'Adicione uma descrição'} />
+                <CustomInput name={'date'} type={'datetime-local'} id={'date'} label={'Data e Hora'} />
+                <CustomInput name={'type'} type={'text'} id={'type'} label={'Tipo do item'} />
+                <CustomInput name={'title'} type={'text'} id={'title'} label={'Opções de recorrência'} />
+                <CustomInputSubmit value={'Salvar'} />
             </form>
         </BaseLayoutPage>
     )

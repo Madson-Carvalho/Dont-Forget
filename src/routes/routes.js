@@ -7,18 +7,26 @@ import CreateList from "../pages/create_list/CreateList";
 import Contact from "../pages/contact/Contact";
 import MyLists from "../pages/my_lists/MyLists";
 import CreateListItem from "../pages/create_list_item/CreateListItem";
+import { useState } from "react";
 
 const CustomRoutes = () => {
+    const [isSidebarOpen, setSidebarOpen] = useState(true);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
+
+
     return (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<UserRegister />} />
-            <Route path="/admin-home" element={<AdminHome />} />
-            <Route path="/create-list" element={<CreateList/>} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/my-lists" element={<MyLists/>} />
-            <Route path="/create-list-intens" element={<CreateListItem/>} />
+            <Route path="/admin-home" element={<AdminHome isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />} />
+            <Route path="/create-list" element={<CreateList isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />} />
+            <Route path="/contact" element={<Contact isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />} />
+            <Route path="/my-lists" element={<MyLists isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />} />
+            <Route path="/create-list-intens" element={<CreateListItem isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}  />} />
         </Routes>
     )
 }
