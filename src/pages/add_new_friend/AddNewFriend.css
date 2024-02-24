@@ -1,0 +1,7 @@
+.new-friend {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+    width: 100%;
+}

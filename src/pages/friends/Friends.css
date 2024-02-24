@@ -1,0 +1,9 @@
+.friend-table {
+    padding-top: 1rem;
+}
+
+.top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

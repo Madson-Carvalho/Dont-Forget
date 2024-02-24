@@ -1,0 +1,41 @@
+.table-footer {
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 3px;
+    padding: 1rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    color: #0b3c5c;
+    font-weight: bold
+}
+
+.table-footer>h3 {
+    font-weight: normal;
+    font-size: 0.8em;
+    text-transform: none;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    gap: unset;
+}
+
+.page-link {
+    all: unset;
+    color: #0b3c5c;
+    border: solid 0.5px #0b3c5c;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    all: unset;
+    color: #0b3c5c;
+    border: solid 1px #0b3c5c;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+}

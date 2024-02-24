@@ -1,0 +1,7 @@
+.table-container {
+    max-width: 100%;
+}
+
+.table-container .table-row:nth-child(odd) {
+    background-color: #ebf3fe;
+}
